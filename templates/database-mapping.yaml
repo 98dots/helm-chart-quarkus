@@ -1,0 +1,11 @@
+{{- if .Values.database.mapping.enabled -}}
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ include "quarkus.fullname" . }}-sql-server
+  labels:
+    {{- include "quarkus.labels" . | nindent 4 }}
+spec: 
+  type: ExternalName
+  externalName: Values.database.mapping.ip
+{{- end }}
