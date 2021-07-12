@@ -52,7 +52,7 @@ livenessProbe:
 readinessProbe:
   httpGet:
     path: /health/ready
-    port: http
+    port: 8080
   initialDelaySeconds: 10
   periodSeconds: 10
   timeoutSeconds: 5
