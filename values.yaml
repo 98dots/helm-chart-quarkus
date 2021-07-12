@@ -13,7 +13,7 @@ image:
 database:
   mapping:
     enabled: false
-    ip: "192.168.1.113"
+    ip: "192.168.1.13"
 
 imagePullSecrets: []
 nameOverride: ""
