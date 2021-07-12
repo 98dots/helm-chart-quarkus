@@ -7,5 +7,5 @@ metadata:
     {{- include "quarkus.labels" . | nindent 4 }}
 spec: 
   type: ExternalName
-  externalName: {{ Values.database.mapping.ip }}
+  externalName: {{ .Values.database.mapping.ip }}
 {{- end }}
